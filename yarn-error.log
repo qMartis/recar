@@ -1,0 +1,31 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\xampp\htdocs\laravel\recar-fe-gql-test-master\.yarn\releases\yarn-1.22.11.cjs set version from sources
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs\;C:\Users\marty\AppData\Local\Microsoft\WindowsApps;C:\Users\marty\AppData\Local\Programs\Microsoft VS Code\bin;C:\xampp\php;C:\Users\marty\AppData\Roaming\Composer\vendor\bin;C:\Users\marty\AppData\Roaming\npm;C:\Program Files (x86)\GnuWin32\bin;
+
+Yarn version: 
+  1.22.11
+
+Node version: 
+  14.17.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: Release not found: from
+      at C:\xampp\htdocs\laravel\recar-fe-gql-test-master\.yarn\releases\yarn-1.22.11.cjs:98340:17
+      at Generator.next (<anonymous>)
+      at step (C:\xampp\htdocs\laravel\recar-fe-gql-test-master\.yarn\releases\yarn-1.22.11.cjs:310:30)
+      at C:\xampp\htdocs\laravel\recar-fe-gql-test-master\.yarn\releases\yarn-1.22.11.cjs:321:13
+      at processTicksAndRejections (internal/process/task_queues.js:95:5)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

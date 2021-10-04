@@ -1,0 +1,52 @@
+{
+	"name": "recar-fe-gql-test-server",
+	"version": "1.0.1",
+	"author": "Mantas Morkūnas <bernessco@recar.lt>",
+	"homepage": "https://github.com/bernessco/recar-fe-gql-test#readme",
+	"license": "MIT",
+	"repository": "git@github.com:bernessco/recar-fe-gql-test.git",
+	"scripts": {
+		"start": "node -r ./dist/bootstrap ./dist/main",
+		"build": "tsc && cp -R src/views dist/views",
+		"dev": "tsnd --respawn -r ./src/bootstrap src/main",
+		"typeorm": "ts-node ./node_modules/typeorm/cli.js -f src/config/database.ts",
+		"seed": "ts-node src/database/seeds/create-parts.seed",
+		"setup": "yarn typeorm schema:sync && yarn seed",
+		"reset": "yarn typeorm schema:drop && yarn setup"
+	},
+	"bugs": {
+		"url": "https://github.com/bernessco/recar-fe-gql-test/issues"
+	},
+	"devDependencies": {
+		"@types/compression": "^1.7.0",
+		"@types/cors": "^2.8.10",
+		"@types/dotenv": "^8.2.0",
+		"@types/express": "^4.17.12",
+		"@types/node": "^16.0.0",
+		"@typescript-eslint/eslint-plugin": "^4.28.2",
+		"@typescript-eslint/parser": "^4.28.2",
+		"eslint": "^7.30.0",
+		"ts-node": "^10.0.0",
+		"ts-node-dev": "^1.1.8",
+		"typescript": "^4.3.5"
+	},
+	"dependencies": {
+		"@types/consolidate": "^0.14.1",
+		"apollo-server-express": "^2.25.2",
+		"class-validator": "^0.13.1",
+		"compression": "^1.7.4",
+		"consolidate": "^0.16.0",
+		"cors": "^2.8.5",
+		"dotenv": "^10.0.0",
+		"express": "^4.17.1",
+		"graphql": "^15.5.1",
+		"handlebars": "^4.7.7",
+		"helmet": "^4.6.0",
+		"reflect-metadata": "^0.1.13",
+		"sqlite3": "^5.0.2",
+		"type-graphql": "^1.1.1",
+		"typedi": "^0.10.0",
+		"typeorm": "^0.2.34",
+		"typeorm-typedi-extensions": "^0.4.1"
+	}
+}
