@@ -1,0 +1,7 @@
+#import "./PartFragment.gql"
+
+query getFilteredByManufacturer($Manufacturer: String!){
+  parts(filters: { manufacturer: $manufacturer }) { {
+    ...part
+  }
+}

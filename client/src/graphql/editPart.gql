@@ -1,0 +1,29 @@
+
+mutation editPart (
+    $id: ID!
+    $name: String!
+    $price: Int!
+    $manufacturer: String!
+    $model: String!
+    $year: Int!
+    $color: String!
+  )
+  {
+  editPart(
+    id: $id,
+    input: {
+      name: $name, 
+      price: $price, 
+      manufacturer: $manufacturer, 
+      model: $model, 
+      year: $year, 
+      color: $color
+    }
+  ) 
+  { 
+  	part {
+      id
+    }
+  }
+
+}

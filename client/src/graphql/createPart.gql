@@ -1,0 +1,27 @@
+
+mutation createPart (
+    $name: String!
+    $price: Int!
+    $manufacturer: String!
+    $model: String!
+    $year: Int!
+    $color: String!
+  )
+  {
+  createPart(
+    input: {
+      name: $name, 
+      price: $price, 
+      manufacturer: $manufacturer, 
+      model: $model, 
+      year: $year, 
+      color: $color
+    }
+  ) 
+  { 
+  	part {
+      id
+    }
+  }
+
+}

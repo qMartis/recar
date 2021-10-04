@@ -1,0 +1,7 @@
+#import "./PartFragment.gql"
+
+query getSortedParts($direction: SortByDirection!, $field: PartSortByField!){
+  parts(sortBy: { direction: $direction, field: $field }) {
+    ...part
+  }
+}

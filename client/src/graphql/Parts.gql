@@ -1,0 +1,8 @@
+#import "./PartFragment.gql"
+
+
+query getParts{
+  parts {
+    ...part
+  }
+}

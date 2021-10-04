@@ -1,0 +1,9 @@
+fragment part on Part {
+  id
+  name
+  price
+  manufacturer
+  model
+  year
+  color
+}

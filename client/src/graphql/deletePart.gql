@@ -1,0 +1,11 @@
+
+mutation deletePart($id: ID!)
+  {
+  deletePart(id: $id) 
+  { 
+  	part {
+      id
+    }
+  }
+
+}
