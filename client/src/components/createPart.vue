@@ -62,7 +62,7 @@
 <script>
 
 export default {
-    name: 'createProduct',
+    name: 'createPart',
     data() {
         return {
             menuVisible: false,

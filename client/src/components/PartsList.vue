@@ -1,7 +1,7 @@
 <template>
 
 <div class="mt-6 grid grid-cols-1 gap-y-2">
-
+  
   <div class="border-gray-100 border-2 p-2 item" v-for="item in items" :key="item.id">
     <!--PRODUCT DATA LINE-->
     <div class="grid lg:grid-cols-6 align-middle justify-center">
@@ -95,7 +95,7 @@
 <script>
 import $ from 'jquery'
 export default {
-    name: "Products",
+    name: "partsList",
     props: ['items'],
     methods: {
       slideEditMenu(event) {
